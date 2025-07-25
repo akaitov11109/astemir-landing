@@ -1,0 +1,92 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(25, 0, 50, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(175, 82, 222, 0.7);
+    border: 1px solid rgba(175, 82, 222, 0.3);
+    backdrop-filter: blur(6px);
+  }
+  
+  h1, h2 {
+    color: #c688f5;
+    text-shadow: 0 0 5px #c688f5;
+  }
+  
+  a.link {
+    color: #c688f5;
+    text-decoration: none;
+  }
+  
+  a.link:hover {
+    text-decoration: underline;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a347f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #a347f4;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #923edb;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  /* Адаптация для мобильных */
+  @media (max-width: 600px) {
+    .container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      font-size: 1.4em;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+        max-width: 100%;
+    }
+  }
+  
+  /* Анимация появления */
+  .fade-in {
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
